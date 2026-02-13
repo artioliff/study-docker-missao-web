@@ -1,0 +1,4 @@
+# Este arquivo é a nossa "Lista de Compras".
+# Aqui colocamos tudo que o Python precisa instalar para a nossa nave funcionar.
+
+Flask==3.0.0  # O motor da nossa nave web!

@@ -1,0 +1,17 @@
+# O docker-compose é como um "Plano de Voo" automático.
+# Em vez de digitar um monte de comandos, escrevemos tudo aqui.
+
+version: '3'  # Versão do manual que estamos usando.
+
+services:
+  # SERVIÇO 1: A NOSSA NAVE
+  missao-web:
+    build: .  # "Construa a nave usando o Dockerfile que está AQUI (.)"
+    ports:
+      # AQUI ESTÁ O TRUQUE! 🔌
+      # "Conecte a porta 5000 do meu computador (esquerda) 
+      #  na porta 5000 da nave (direita)."
+      - "5000:5000"
+    volumes:
+       # Opcional: Para ver as mudanças sem reiniciar (modo avançado!)
+       - .:/app

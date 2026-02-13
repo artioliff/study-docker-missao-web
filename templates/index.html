@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle Espacial 🚀</title>
+    <style>
+        body {
+            background-color: #0b3d91; /* Cor do espaço profundo */
+            color: white;
+            font-family: 'Courier New', Courier, monospace; /* Fonte de computador antigo */
+            text-align: center;
+            padding: 50px;
+        }
+        .monitor {
+            background-color: #000;
+            border: 4px solid #aaa;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            color: #4CAF50; /* Verde matrix */
+        }
+        .status-item {
+            font-size: 1.5em;
+            margin: 20px 0;
+            border-bottom: 1px dashed #555;
+            padding-bottom: 10px;
+        }
+        .destaque {
+            color: #FFD700; /* Dourado */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="monitor">
+        <h1>🛰️ SISTEMA DA NAVE ONLINE</h1>
+        <p>Recebendo dados do computador de bordo...</p>
+        
+        <div class="status-item">
+            Combustível: <span class="destaque">{{ status.combustivel }}%</span>
+        </div>
+        
+        <div class="status-item">
+            Temperatura Interna: <span class="destaque">{{ status.temperatura }}°C</span>
+        </div>
+        
+        <div class="status-item">
+            Próximo Destino: <span class="destaque">{{ status.destino }}</span>
+        </div>
+        
+        <p><i>Sistema Docker Operando Normalmente.</i></p>
+    </div>
+</body>
+</html>
